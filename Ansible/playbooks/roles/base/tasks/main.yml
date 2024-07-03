@@ -1,0 +1,18 @@
+---
+# Tasks for base role
+- name: Update APT package index
+  apt:
+    update_cache: yes
+
+- name: Upgrade all APT packages
+  apt:
+    upgrade: dist
+
+- name: Set timezone
+  timezone:
+    name: "{{ timezone }}"
+
+- name: Install base packages
+  apt:
+    name: "{{ packages }}"
+    state: present

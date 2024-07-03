@@ -1,0 +1,8 @@
+---
+# Variables for base role
+timezone: "Etc/UTC"
+packages:
+  - sudo
+  - vim
+  - curl
+  - git
